@@ -1,13 +1,13 @@
 import random
 
-hands = ['ƒO[', 'ƒ`ƒ‡ƒL', 'ƒp[']
+hands = ['ã‚°ãƒ¼', 'ãƒãƒ§ã‚­', 'ãƒ‘ãƒ¼']
 
 def start_message():
-  print('‚¶‚á‚ñ‚¯‚ñƒXƒ^[ƒg')
+  print('ã˜ã‚ƒã‚“ã‘ã‚“ã‚¹ã‚¿ãƒ¼ãƒˆ')
 
 def get_my_hand():
-  print('©•ª‚Ìè‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢')
-  return int(input('0:ƒO[, 1:ƒ`ƒ‡ƒL, 2:ƒp['))
+  print('è‡ªåˆ†ã®æ‰‹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„')
+  return int(input('0:ã‚°ãƒ¼, 1:ãƒãƒ§ã‚­, 2:ãƒ‘ãƒ¼'))
 
 def get_you_hand():
   return random.randint(0, 2)
@@ -16,16 +16,16 @@ def get_hand_name(hand_number):
   return hands[hand_number]
 
 def view_hand(my_hand, you_hand):
-  print('©•ª‚Ìè‚Í ' + get_hand_name(my_hand))
-  print('‘Šè‚Ìè‚Í ' + get_hand_name(you_hand))
+  print('è‡ªåˆ†ã®æ‰‹ã¯ ' + get_hand_name(my_hand))
+  print('ç›¸æ‰‹ã®æ‰‹ã¯ ' + get_hand_name(you_hand))
 
 def view_result(hand_diff):
   if hand_diff == 0:
-    print('‚ ‚¢‚±')
+    print('ã‚ã„ã“')
   elif hand_diff == -1 or hand_diff == 2:
-    print('Ÿ‚¿')
+    print('å‹ã¡')
   else:
-    print('•‰‚¯')
+    print('è² ã‘')
 
 start_message()
 
