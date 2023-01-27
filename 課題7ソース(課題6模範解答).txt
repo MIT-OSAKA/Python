@@ -1,13 +1,13 @@
 import random
 
-hands = ['ƒO[', 'ƒ`ƒ‡ƒL', 'ƒp[']
-results = {'win':'Ÿ‚¿', 'lose':'•‰‚¯', 'draw':'‚ ‚¢‚±'}
+hands = ['ã‚°ãƒ¼', 'ãƒãƒ§ã‚­', 'ãƒ‘ãƒ¼']
+results = {'win':'å‹ã¡', 'lose':'è² ã‘', 'draw':'ã‚ã„ã“'}
 
 def start_message():
-  print('‚¶‚á‚ñ‚¯‚ñƒXƒ^[ƒg')
+  print('ã˜ã‚ƒã‚“ã‘ã‚“ã‚¹ã‚¿ãƒ¼ãƒˆ')
 
 def get_my_hand():
-  print('©•ª‚Ìè‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢')
+  print('è‡ªåˆ†ã®æ‰‹ã‚’å…¥åŠ›ã—ã¦ãã ã•ã„')
   input_message = ''
   index = 0
   for hand in hands:
@@ -24,8 +24,8 @@ def get_hand_name(hand_number):
   return hands[hand_number]
 
 def view_hand(my_hand, you_hand):
-  print('©•ª‚Ìè‚Í ' + get_hand_name(my_hand))
-  print('‘Šè‚Ìè‚Í ' + get_hand_name(you_hand))
+  print('è‡ªåˆ†ã®æ‰‹ã¯ ' + get_hand_name(my_hand))
+  print('ç›¸æ‰‹ã®æ‰‹ã¯ ' + get_hand_name(you_hand))
 
 def get_result(hand_diff):
   if hand_diff == 0:
